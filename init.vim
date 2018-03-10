@@ -1,4 +1,5 @@
 set encoding=utf-8
+source ~/dotfiles/plug.vim
 
 call plug#begin('~/.config/nvim/bundle')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
