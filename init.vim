@@ -15,7 +15,7 @@ Plug 'w0rp/ale'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
+Plug 'tpope/vim-fugitive'
 
 " call PlugInstall to install new plugins
 call plug#end()
