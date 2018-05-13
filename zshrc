@@ -5,7 +5,7 @@
 export ZSH=/home/jop/.oh-my-zsh
 
 export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf/bin
-
+export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-eabi/bin
 export TERM=xterm-256color
 
 # Set name of the theme to load. Optionally, if you set this to "random"
