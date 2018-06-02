@@ -379,6 +379,8 @@ key_bindings:
   - { key: R, mods: Alt, chars: "]" }
   - { key: T, mods: Alt, chars: "@" }
   - { key: P, mods: Alt, chars: "\x7E" } 
+  - { key: Y, mods: Alt, chars: "\\" } 
+
 
     
  

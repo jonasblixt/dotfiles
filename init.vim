@@ -48,6 +48,7 @@ set expandtab
 set nobackup
 set noswapfile
 set nowrap
+set matchpairs=""
 
 " preferences
 inoremap jk <ESC>
