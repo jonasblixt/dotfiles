@@ -6,8 +6,14 @@ export ZSH=/home/jop/.oh-my-zsh
 
 export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf/bin
 export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-eabi/bin
+export PATH=$PATH:/opt/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu/bin/
 export PATH=$PATH:/opt/cov-analysis-linux64-2017.07/bin
+export PATH=$PATH:~/cov-analysis-linux64-2017.07/bin
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:/opt/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-elf/bin
+
+export PYTHONPATH=~/dotfiles/python
+
 export TERM=xterm-256color
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -100,3 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source  ~/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+
+# added by travis gem
+[ -f /home/jop/.travis/travis.sh ] && source /home/jop/.travis/travis.sh
