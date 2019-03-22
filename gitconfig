@@ -1,0 +1,9 @@
+[user]
+	email = jonpe960@gmail.com
+	name = Jonas Persson
+[core]
+	editor = nvim
+[color]
+	ui = auto
+[push]
+	followTags = true

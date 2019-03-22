@@ -9,13 +9,13 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'zchee/deoplete-jedi'
 Plug 'altercation/vim-colors-solarized'
 Plug 'w0ng/vim-hybrid'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'w0rp/ale'
+"Plug 'pangloss/vim-javascript'
+"Plug 'mxw/vim-jsx'
+"Plug 'w0rp/ale'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 
 " call PlugInstall to install new plugins
 call plug#end()
@@ -34,7 +34,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " basics
 filetype plugin indent on
-syntax on 
+syntax on
 set number
 " set relativenumber
 set incsearch
@@ -105,8 +105,8 @@ let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 
-let g:ale_sign_error = '✖'                                                  
-let g:ale_sign_warning = '⚠'                                                   
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = 'X'
 let g:ale_sign_column_always = 1
 " jsx
 let g:jsx_ext_required = 0
@@ -118,3 +118,9 @@ let g:jsx_ext_required = 0
 "let g:ale_fix_on_save = 1
 "let g:ale_javascript_prettier_eslint_executable = 'prettier-eslint'
 "let g:ale_javascript_prettier_eslint_use_global = 1:
+
+
+" Highlight trailing whitespaces
+highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+match ExtraWhitespace /\s\+\%#\@<!$/
+
