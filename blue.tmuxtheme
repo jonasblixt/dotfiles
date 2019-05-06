@@ -61,4 +61,4 @@ set -g message-style bg=colour24,fg=black
 set -g message-command-style bg=colour233,fg=black
 
 # Mode
-set -g mode-style bg=colour24,fg=colour231
+set -g mode-style bg=colour24,fg=colour23
