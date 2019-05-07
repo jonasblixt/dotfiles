@@ -87,3 +87,6 @@ function! ToggleNetrw()
 endfunction
 
 map <Leader>t <esc>:call ToggleNetrw()<CR>
+
+set complete=k**/*.[ch]
+set bs=2

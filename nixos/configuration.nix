@@ -31,20 +31,25 @@
     # Set your time zone.
     time.timeZone = "Europe/Stockholm";
 
+    virtualisation.docker.enable = true;
+    virtualisation.docker.enableOnBoot = true;
 
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
         wget
-        vim
+        vim_configurable
         git
         oh-my-zsh
-        python36
+        python37
         tmux
         zsh
         yarn
         nodejs
         gnumake
+        ccls
+        python37Packages.pynvim
+        vimPlugins.clang_complete
     ];
 
     programs.zsh.interactiveShellInit =
@@ -82,7 +87,7 @@
         isNormalUser = true;
         home = "/home/jop";
         description = "jop";
-        extraGroups = [ "wheel" "networkmanager" ];
+        extraGroups = [ "wheel" "networkmanager" "docker" ];
         shell = pkgs.zsh;
     };
 
