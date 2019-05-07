@@ -63,6 +63,7 @@
         source $ZSH/oh-my-zsh.sh
     '';
 
+    programs.vim.defaultEditor = true;
     programs.zsh.promptInit = ""; # Clear this to avoid a conflict with oh-my-zsh
 
     # Some programs need SUID wrappers, can be configured further or are
