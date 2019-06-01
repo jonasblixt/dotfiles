@@ -1,7 +1,7 @@
 #!/bin/sh
 
-ln ~/.tmux.conf -s ~/dotfiles/tmux.conf  2> /dev/null
-ln ~/.vimrc -s ~/dotfiles/vimrc  2> /dev/null
+ln -f -s ~/dotfiles/tmux.conf  ~/.tmux.conf
+ln -f -s ~/dotfiles/vimrc ~/.vimrc
 
 # Configure VIM
 

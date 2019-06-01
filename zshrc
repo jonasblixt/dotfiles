@@ -2,6 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE=true
 
 export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf/bin
 export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-eabi/bin
@@ -12,13 +14,15 @@ export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/opt/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-elf/bin
 
 export PYTHONPATH=~/dotfiles/python
-
+export EDITOR=vim
 export TERM=xterm-256color
+
+export ZSH=$HOME/dotfiles/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="asdf"
+ZSH_THEME="gruvbox"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -63,8 +67,7 @@ ZSH_THEME="asdf"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
+ZSH_CUSTOM=$HOME/dotfiles/oh-my-zsh_custom
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -73,6 +76,8 @@ plugins=(
   git
 )
 
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 

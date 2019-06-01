@@ -7,3 +7,6 @@
 [submodule "tmux-gruvbox"]
 	path = tmux-gruvbox
 	url = https://github.com/egel/tmux-gruvbox.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
