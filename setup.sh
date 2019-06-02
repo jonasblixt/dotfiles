@@ -1,6 +1,7 @@
 #!/bin/sh
 
 ln -f -s ~/dotfiles/tmux.conf  ~/.tmux.conf
+ln -f -s ~/dotfiles/zshrc  ~/.zshrc
 ln -f -s ~/dotfiles/vimrc ~/.vimrc
 
 # Configure VIM
