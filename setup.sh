@@ -3,7 +3,7 @@
 ln -f -s ~/dotfiles/tmux.conf  ~/.tmux.conf
 ln -f -s ~/dotfiles/zshrc  ~/.zshrc
 ln -f -s ~/dotfiles/vimrc ~/.vimrc
-
+ln -f -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 # Configure VIM
 
 rm -rf ~/.vim
