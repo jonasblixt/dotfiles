@@ -1,5 +1,4 @@
 set encoding=utf-8
-set clipboard=unnamed
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -90,3 +89,5 @@ map <Leader>t <esc>:call ToggleNetrw()<CR>
 
 set complete=k**/*.[ch]
 set bs=2
+
+

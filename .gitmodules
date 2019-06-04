@@ -10,3 +10,9 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "vim-tmux-clipboard"]
+	path = vim-tmux-clipboard
+	url = https://github.com/roxma/vim-tmux-clipboard.git
+[submodule "vim-tmux-focus-events"]
+	path = vim-tmux-focus-events
+	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git

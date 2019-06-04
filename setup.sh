@@ -3,6 +3,7 @@
 ln -f -s ~/dotfiles/tmux.conf  ~/.tmux.conf
 ln -f -s ~/dotfiles/zshrc  ~/.zshrc
 ln -f -s ~/dotfiles/vimrc ~/.vimrc
+mkdir -p ~/.config/alacritty
 ln -f -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 # Configure VIM
 
@@ -12,6 +13,9 @@ mkdir -p ~/.vim
 cp -R ~/dotfiles/vim-airline/autoload ~/.vim
 cp -R ~/dotfiles/vim-airline/plugin ~/.vim
 cp -R ~/dotfiles/vim-airline/doc ~/.vim
+cp -R ~/dotfiles/vim-tmux-clipboard/plugin ~/.vim
+cp -R ~/dotfiles/vim-tmux-focus-events/plugin ~/.vim
+cp -R ~/dotfiles/vim-tmux-focus-events/autoload ~/.vim
 mkdir -p ~/.vim/pack/default/start/
 
 ## Install deoplete
