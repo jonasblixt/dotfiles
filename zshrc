@@ -74,6 +74,7 @@ ZSH_CUSTOM=$HOME/dotfiles/oh-my-zsh_custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  kubectl
 )
 
 
