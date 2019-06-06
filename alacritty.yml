@@ -368,4 +368,4 @@ key_bindings:
   - { key: U, mods: Alt, chars: "$" }
   - { key: P, mods: Alt, chars: "\x7E" }
   - { key: Y, mods: Alt, chars: "\\" }
-
+  - { key: I, mods: Alt, chars: "|" }
