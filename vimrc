@@ -85,9 +85,13 @@ function! ToggleNetrw()
     endif
 endfunction
 
+function! Tabtospace()
+    1,$s/\t/    /g
+endfunction
+
 map <Leader>t <esc>:call ToggleNetrw()<CR>
 
 set complete=k**/*.[ch]
 set bs=2
-
+set hlsearch
 
