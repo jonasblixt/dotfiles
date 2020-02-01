@@ -1,5 +1,4 @@
 set encoding=utf-8
-set clipboard=unnamed
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -86,7 +85,13 @@ function! ToggleNetrw()
     endif
 endfunction
 
+function! Tabtospace()
+    1,$s/\t/    /g
+endfunction
+
 map <Leader>t <esc>:call ToggleNetrw()<CR>
 
 set complete=k**/*.[ch]
 set bs=2
+set hlsearch
+
