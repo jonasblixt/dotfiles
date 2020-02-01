@@ -89,6 +89,10 @@ function! Tabtospace()
     1,$s/\t/    /g
 endfunction
 
+function! Removetrailingws()
+%s/\s\+$//e
+endfunction
+
 map <Leader>t <esc>:call ToggleNetrw()<CR>
 
 set complete=k**/*.[ch]

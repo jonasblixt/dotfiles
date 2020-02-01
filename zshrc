@@ -8,6 +8,7 @@ export MENUCONFIG_COLOR=classic
 export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf/bin
 export PATH=$PATH:/opt/gcc-linaro-7.2.1-2017.11-x86_64_arm-eabi/bin
 export PATH=$PATH:/opt/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu/bin/
+export PATH=$PATH:/opt/arm-linux-musleabihf/bin/
 export PATH=$PATH:/opt/cov-analysis-linux64-2017.07/bin
 export PATH=$PATH:~/cov-analysis-linux64-2017.07/bin
 export PATH=$PATH:~/.local/bin
