@@ -101,7 +101,7 @@ colors:
 
   # Bright colors
   bright:
-    black:   '0x928374'
+    black:   '0x404040'
     red:     '0xfb4934'
     green:   '0xb8bb26'
     yellow:  '0xfabd2f'
