@@ -1,7 +1,7 @@
 set encoding=utf-8
 
 set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+highlight ColorColumn ctermbg=0 guibg=darkgrey
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -59,8 +59,6 @@ let g:gruvbox_contrast_dark = 'soft'
 " let g:gruvbox_termcolors = 256
 set background=dark
 
-highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
-match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd! bufwritepost ~/.vimrc source %
 
 " Netrw configuration
@@ -99,3 +97,7 @@ set complete=k**/*.[ch]
 set bs=2
 set hlsearch
 
+" Show non-printable characters
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+set list
