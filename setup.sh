@@ -3,6 +3,10 @@
 ln -f -s ~/dotfiles/tmux.conf  ~/.tmux.conf
 ln -f -s ~/dotfiles/zshrc  ~/.zshrc
 ln -f -s ~/dotfiles/vimrc ~/.vimrc
+mkdir -p ~/.config/i3
+ln -f -s ~/dotfiles/i3.conf ~/.config/i3/config
+mkdir -p ~/.config/kitty
+ln -f -s ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 mkdir -p ~/.config/alacritty
 ln -f -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 # Configure VIM
