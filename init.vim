@@ -27,7 +27,7 @@ let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline_powerline_fonts = 1
 
 autocmd! bufwritepost ~/.config/nvim/init.vim source %
-set clipboard=unnamed
+" set clipboard=unnamed
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
