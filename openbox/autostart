@@ -1,5 +1,5 @@
 hsetroot -solid "#303030"
-redshift -O4500
+redshift -O4500 -m randr
 xset dpms 0 0 900
 xmodmap -e "keycode 118 ="
 tint2 &
