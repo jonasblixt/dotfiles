@@ -9,6 +9,8 @@ mkdir -p ~/.config/kitty
 ln -f -s ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 mkdir -p ~/.config/alacritty
 ln -f -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -f -s ~/dotfiles/openbox ~/.config/openbox
+ln -f -s ~/dotfiles/tint2 ~/.config/tint2
 # Configure VIM
 
 rm -rf ~/.vim
