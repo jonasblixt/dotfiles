@@ -101,7 +101,30 @@
             <action name="Unshade"/>
           </finalactions>
         </action>
-        </keybind>
+    </keybind>
+
+    <keybind key="A-S-3">
+      <action name="execute">
+        <execute>~/dotfiles/screenshot.sh -r -f</execute>
+      </action>
+    </keybind>
+    <keybind key="A-S-W-3">
+      <action name="execute">
+        <execute>~/dotfiles/screenshot.sh -r</execute>
+      </action>
+    </keybind>
+    <keybind key="A-S-4">
+      <action name="execute">
+        <execute>~/dotfiles/screenshot.sh -f</execute>
+      </action>
+    </keybind>
+    <keybind key="A-S-W-4">
+      <action name="execute">
+        <execute>~/dotfiles/screenshot.sh</execute>
+      </action>
+    </keybind>
+
+
     </keyboard>
     <desktops>
       <!-- this stuff is only used at startup, pagers allow you to change them
