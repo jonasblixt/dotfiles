@@ -14,8 +14,8 @@ export PATH=$PATH:~/cov-analysis-linux64-2017.07/bin
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/opt/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-elf/bin
 
-export PYTHONPATH=~/dotfiles/python:/usr/local/lib/python3.8/site-packages
-export EDITOR=vim
+export PYTHONPATH=~/dotfiles/python:/usr/local/lib/python3.9/site-packages
+export EDITOR=nvim
 export TERM=xterm-256color
 
 export ZSH=$HOME/dotfiles/oh-my-zsh
