@@ -3,17 +3,15 @@ set encoding=utf-8
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=darkgrey
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#show_tab_nr = 1
-let g:airline_powerline_fonts = 1
-
 set clipboard=unnamedplus
 
 " basics
 filetype plugin indent on
 syntax on
+
+set background=dark
 colorscheme gruvbox
+
 set number
 set expandtab
 set wrapscan
@@ -62,26 +60,8 @@ set background=dark
 autocmd! bufwritepost ~/.vimrc source %
 
 " Netrw configuration
+let g:netrw_liststyle = 5
 let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-
-let g:NetrwIsOpen=0
-
-function! ToggleNetrw()
-    if g:NetrwIsOpen
-        let i = bufnr("$")
-        while (i >= 1)
-            if (getbufvar(i, "&filetype") == "netrw")
-                silent exe "bwipeout " . i
-            endif
-            let i-=1
-        endwhile
-        let g:NetrwIsOpen=0
-    else
-        let g:NetrwIsOpen=1
-        silent Lexplore
-    endif
-endfunction
 
 function! Tabtospace()
     1,$s/\t/    /g
