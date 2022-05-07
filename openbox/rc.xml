@@ -15,12 +15,12 @@
     <keyboard>
         <keybind key="W-r">
             <action name="Execute">
-                <command>rofi -show run </command>
+                <command>rofi -show run -font "mono 24" </command>
             </action>
         </keybind>
         <keybind key="W-w">
             <action name="Execute">
-                <command>rofi -show window </command>
+                <command>rofi -show window -font "mono 24" </command>
             </action>
         </keybind>
 

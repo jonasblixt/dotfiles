@@ -33,7 +33,7 @@ set nowrap
 set matchpairs=""
 
 " preferences
-inoremap jk <ESC>
+inoremap kj <ESC>
 let mapleader = ","
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
@@ -88,3 +88,74 @@ set list
 " incorrect background rendering when using a color theme with a
 " background color.
 let &t_ut=''
+
+" Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+" This was needed to disable arrow keys in insert mode
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
+" vim-tmux clipboard (from https://github.com/roxma/vim-tmux-clipboard)
+func! s:TmuxBufferName()
+    let l:list = systemlist('tmux list-buffers -F"#{buffer_name}"')
+    if len(l:list)==0
+        return ""
+    else
+        return l:list[0]
+    endif
+endfunc
+
+func! s:TmuxBuffer()
+    return system('tmux show-buffer')
+endfunc
+
+func! s:Enable()
+
+    if $TMUX==''
+        " not in tmux session
+        return
+    endif
+
+    let s:lastbname=""
+
+    " if support TextYankPost
+    if exists('##TextYankPost')==1
+        " @"
+        augroup vimtmuxclipboard
+            autocmd!
+            autocmd FocusLost * call s:update_from_tmux()
+            autocmd	FocusGained   * call s:update_from_tmux()
+            autocmd TextYankPost * silent! call system('tmux loadb -',join(v:event["regcontents"],"\n"))
+        augroup END
+        let @" = s:TmuxBuffer()
+    else
+        " vim doesn't support TextYankPost event
+        " This is a workaround for vim
+        augroup vimtmuxclipboard
+            autocmd!
+            autocmd FocusLost     *  silent! call system('tmux loadb -',@")
+            autocmd	FocusGained   *  let @" = s:TmuxBuffer()
+        augroup END
+        let @" = s:TmuxBuffer()
+    endif
+
+endfunc
+
+func! s:update_from_tmux()
+    let buffer_name = s:TmuxBufferName()
+    if s:lastbname != buffer_name
+        let @" = s:TmuxBuffer()
+    endif
+    let s:lastbname=s:TmuxBufferName()
+endfunc
+
+call s:Enable()
+
+set exrc
+set secure
