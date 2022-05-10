@@ -108,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jonas/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["vim-tmux-clipboard"] = {
+    loaded = true,
+    path = "/home/jonas/.local/share/nvim/site/pack/packer/start/vim-tmux-clipboard",
+    url = "https://github.com/roxma/vim-tmux-clipboard"
   }
 }
 
