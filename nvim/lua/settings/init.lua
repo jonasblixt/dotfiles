@@ -38,6 +38,8 @@ keymap('', '<Leader>m', "<esc>:tabnext<CR>", {})
 keymap('', '<Leader>n', "<esc>:tabprevious<CR>", {})
 keymap('', '<Leader>s', "<esc>:w<CR>", {})
 keymap('', '<Leader>t', "<esc>:NvimTreeToggle<CR>", {})
+keymap('', '<Leader>f', "<esc>:Files<CR>", {})
+keymap('', '<Leader>,', "<esc>:GFiles<CR>", {})
 
 -- Stay in indent mode
 keymap("v", "<", "<gv", {})
