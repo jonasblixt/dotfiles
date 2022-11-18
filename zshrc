@@ -111,3 +111,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
