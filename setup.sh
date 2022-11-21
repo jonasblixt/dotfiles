@@ -13,5 +13,4 @@ ln -f -s ~/dotfiles/openbox ~/.config/openbox
 # Configure VIM
 
 rm -rf ~/.vim
-mkdir -p ~/.vim/colors
-cp -f ~/dotfiles/gruvbox.vim ~/.vim/colors/
+ln -f -s ~/dotfiles/vim ~/.vim

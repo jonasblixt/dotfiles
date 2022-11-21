@@ -16,3 +16,18 @@
 [submodule "vim-tmux-focus-events"]
 	path = vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
+[submodule "vim/pack/dist/start/fugitive"]
+	path = vim/pack/dist/start/fugitive
+	url = https://tpope.io/vim/fugitive.git
+[submodule "vim/pack/dist/start/fzf"]
+	path = vim/pack/dist/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "vim/pack/dist/start/fzf.vim"]
+	path = vim/pack/dist/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/pack/dist/start/gruvbox"]
+	path = vim/pack/dist/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "vim/pack/dist/start/vim-airline"]
+	path = vim/pack/dist/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline

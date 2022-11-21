@@ -51,6 +51,9 @@ map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 map <Leader>s <esc>:w<CR>
 map <Leader>. <esc>:tabnew<CR>
+map <Leader>, <esc>:Buffers<CR>
+map <Leader>t <esc>:Tags<CR>
+map <Leader>l <esc>:GFiles<CR>
 
 
 let g:gruvbox_contrast_dark = 'soft'
@@ -63,6 +66,12 @@ autocmd! bufwritepost ~/.vimrc source %
 let g:netrw_liststyle = 5
 let g:netrw_banner = 0
 
+" Airline stuff
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#show_tab_nr = 1
+let g:airline_powerline_fonts = 1
+
 function! Tabtospace()
     1,$s/\t/    /g
 endfunction
@@ -70,8 +79,6 @@ endfunction
 function! Removetrailingws()
 %s/\s\+$//e
 endfunction
-
-map <Leader>t <esc>:call ToggleNetrw()<CR>
 
 set complete=k**/*.[ch]
 set bs=2
