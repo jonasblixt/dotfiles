@@ -53,7 +53,7 @@ map <Leader>s <esc>:w<CR>
 map <Leader>. <esc>:tabnew<CR>
 map <Leader>, <esc>:Buffers<CR>
 map <Leader>t <esc>:Tags<CR>
-map <Leader>l <esc>:GFiles<CR>
+map <Leader>l <esc>:GFiles --recurse-submodules<CR>
 
 
 let g:gruvbox_contrast_dark = 'soft'
