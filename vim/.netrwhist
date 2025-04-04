@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/jonas/dotfiles/nvim/lua/colorschemes-config'
+let g:netrw_dirhist_1='/home/jonas/dotfiles/nvim/lua/lualine-config'
+let g:netrw_dirhist_0='/home/jonas/work/python-cli-skeleton/tests/__pycache__'
+let g:netrw_dirhist_9='/home/jonas/work/punchboot/src/arch/armv8a'
+let g:netrw_dirhist_8='/home/jonas/work/punchboot/src/board/test'
+let g:netrw_dirhist_7='/home/jonas'
+let g:netrw_dirhist_6='/home/jonas/.config'
+let g:netrw_dirhist_5='/home/jonas/.config/neomutt'
+let g:netrw_dirhist_4='/home/jonas/work/punchboot/src/board/jiffy'
+let g:netrw_dirhist_3='/home/jonas/work/punchboot/src/drivers/usb'

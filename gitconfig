@@ -1,9 +1,12 @@
 [user]
-	email = jonpe960@gmail.com
+	email = jonas@blxt.se
 	name = Jonas Blixt
 [core]
 	editor = vim
 [color]
 	ui = auto
 [push]
-	followTags = true
+    followTags = true
+[alias]
+last = "!git --no-pager log -1 HEAD"
+fpl = push --force-with-lease
