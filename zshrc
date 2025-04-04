@@ -19,6 +19,8 @@ export EDITOR=vim
 export TERM=xterm-256color
 
 export ZSH=$HOME/dotfiles/oh-my-zsh
+export FZF_CTRL_T_OPTS="--preview=batcat -n --style=numbers --line-range=:500 --color=always {}"
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -113,3 +115,6 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Punchboot autocomplete
+eval "$(_PUNCHBOOT_COMPLETE=zsh_source punchboot)"
