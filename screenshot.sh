@@ -1,49 +1,37 @@
 #!/bin/sh
+# Take a screenshot with ImageMagick and put it on the clipboard.
+#
+# Usage: screenshot.sh [-f] [-r]
+#   -f  save to screenshot-<timestamp>.png instead of the clipboard
+#   -r  capture the whole screen instead of a selected region
 
-import --version > /dev/null 2>&1 || echo "ImageMagic is not installed!"
-xclip -help > /dev/null 2>&1 || echo "xclip is not installed!"
-
-# whether to screenshot root window or allow user to choose region
-root_window=0
-# whether to output to a file or to a clipboard
-to_file=0
-
-args=$(getopt fr $*)
-if test $? -ne 0; then
+usage() {
   echo "Usage: $0 [-f] [-r]"
   exit 2
-fi
-set -- $args
-while :; do
-  case "$1" in
-  -f)
-    to_file=1
-    shift
-    ;;
-  -r)
-    root_window=1
-    shift
-    ;;
-  --)
-    shift; break
-    ;;
+}
+
+command -v import > /dev/null || { echo "ImageMagick is not installed!"; exit 1; }
+command -v xclip > /dev/null || { echo "xclip is not installed!"; exit 1; }
+
+root_window=0
+to_file=0
+
+while getopts fr opt; do
+  case "$opt" in
+    f) to_file=1 ;;
+    r) root_window=1 ;;
+    *) usage ;;
   esac
 done
 
-import_opts=""
-if test ${root_window} -eq 1; then
-   import_opts="${import_opts} -window root"
+if [ "$root_window" -eq 1 ]; then
+  set -- -window root
+else
+  set --
 fi
 
-if test ${to_file} -eq 1; then
-  filename="screenshot-$(date +%Y%m%d%H%M%S).png"
-  import_opts="${import_opts} ${filename}"
+if [ "$to_file" -eq 1 ]; then
+  import "$@" "screenshot-$(date +%Y%m%d%H%M%S).png"
 else
-  import_opts="${import_opts} png:-"
-fi
-
-if test ${to_file} -eq 1; then
-  import ${import_opts}
-else
-  import ${import_opts}|xclip -selection clipboard -t image/png
+  import "$@" png:- | xclip -selection clipboard -t image/png
 fi
