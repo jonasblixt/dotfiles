@@ -1,21 +1,6 @@
-[submodule "gruvbox"]
-	path = gruvbox
-	url = https://github.com/morhetz/gruvbox.git
-[submodule "vim-airline"]
-	path = vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "tmux-gruvbox"]
-	path = tmux-gruvbox
-	url = https://github.com/egel/tmux-gruvbox.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim-tmux-clipboard"]
-	path = vim-tmux-clipboard
-	url = https://github.com/roxma/vim-tmux-clipboard.git
-[submodule "vim-tmux-focus-events"]
-	path = vim-tmux-focus-events
-	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
 [submodule "vim/pack/dist/start/fugitive"]
 	path = vim/pack/dist/start/fugitive
 	url = https://tpope.io/vim/fugitive.git
