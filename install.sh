@@ -79,6 +79,7 @@ link "$DOTFILES/vim" ~/.vim
 link "$DOTFILES/kitty.conf" ~/.config/kitty/kitty.conf
 link "$DOTFILES/alacritty.toml" ~/.config/alacritty/alacritty.toml
 link "$DOTFILES/openbox" ~/.config/openbox
+link "$DOTFILES/claude/muted.json" ~/.claude/themes/muted.json
 
 # alacritty.yml was replaced by alacritty.toml
 if [ -L ~/.config/alacritty/alacritty.yml ]; then
