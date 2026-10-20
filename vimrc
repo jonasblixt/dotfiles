@@ -22,11 +22,9 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set nohlsearch
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
-set expandtab
 set nobackup
 set noswapfile
 set nowrap
@@ -58,7 +56,6 @@ map <Leader>l <esc>:GFiles --recurse-submodules<CR>
 
 let g:gruvbox_contrast_dark = 'soft'
 " let g:gruvbox_termcolors = 256
-set background=dark
 
 autocmd! bufwritepost ~/.vimrc source %
 
@@ -82,7 +79,6 @@ endfunction
 
 set complete=k**/*.[ch]
 set bs=2
-set hlsearch
 
 " Show non-printable characters
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
@@ -108,7 +104,7 @@ inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 
-" vim-tmux clipboard (from https://github.com/roxma/vim-tmux-clipboard)
+" Sync the unnamed register with the tmux paste buffer (from https://github.com/roxma/vim-tmux-clipboard)
 func! s:TmuxBufferName()
     let l:list = systemlist('tmux list-buffers -F"#{buffer_name}"')
     if len(l:list)==0
