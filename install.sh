@@ -71,6 +71,7 @@ link() {
 }
 
 link "$DOTFILES/gitconfig" ~/.gitconfig
+link "$DOTFILES/tigrc" ~/.tigrc
 link "$DOTFILES/tmux.conf" ~/.tmux.conf
 link "$DOTFILES/zshrc" ~/.zshrc
 link "$DOTFILES/vimrc" ~/.vimrc

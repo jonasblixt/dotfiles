@@ -1,0 +1,75 @@
+# Muted tig colors (256-color palette), matching the agnoster prompt in zshrc
+# Syntax: color <area> <fg> <bg> [attributes]
+
+color default             250 default
+color cursor              252 237
+color search-result       235 137
+color title-focus         252 238
+color title-blur          245 236
+color status              245 default
+color delimiter           240 default
+color header              109 default
+color line-number         240 default
+color id                  137 default
+color date                66  default
+color author              108 default
+color mode                66  default
+color overflow            131 default
+color directory           109 default
+color file                250 default
+color file-size           245 default
+color graph-commit        137 default
+
+# Refs in the main view
+color main-head           108 default bold
+color main-local-tag      139 default
+color main-tag            139 default bold
+color main-remote         73  default
+color main-tracked        73  default bold
+color main-ref            109 default
+color main-replace        137 default
+
+# Diffs
+color diff-header         137 default
+color diff-index          60  default
+color diff-chunk          139 default
+color diff-add            108 default
+color diff-add2           108 default
+color diff-del            131 default
+color diff-del2           131 default
+color diff-add-highlight  108 236 bold
+color diff-del-highlight  131 236 bold
+color "---"               245 default
+color "+++ "              245 default
+color "--- "              245 default
+color "@@"                139 default
+color "+"                 108 default
+color " +"                108 default
+color "-"                 131 default
+color " -"                131 default
+color "index "            60  default
+color "diff --"           137 default bold
+
+# Commit headers in the diff/log views
+color "commit "           137 default
+color "Merge: "           66  default
+color "Author: "          108 default
+color "Commit: "          108 default
+color "AuthorDate: "      66  default
+color "CommitDate: "      66  default
+color "Date: "            66  default
+color "Refs: "            109 default
+color "Signed-off-by"     139 default
+color "Acked-by"          139 default
+color "Reviewed-by"       139 default
+color "Tested-by"         139 default
+
+# Status view
+color stat-none           250 default
+color stat-staged         108 default
+color stat-unstaged       137 default
+color stat-untracked      131 default
+
+# Help view
+color help-group          109 default
+color help-action         137 default
