@@ -44,3 +44,6 @@ for f in \
   [ -f "$f" ] && source "$f"
 done
 unset f
+if command -v punchboot > /dev/null; then
+  eval "$(_PUNCHBOOT_COMPLETE=zsh_source punchboot)"
+fi
