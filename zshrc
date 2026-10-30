@@ -20,6 +20,10 @@ export EDITOR=vim
 export TERM=xterm-256color
 export MENUCONFIG_COLOR=classic
 
+# Android SDK: its adb first, so a distro adb can't fight it
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
+
 # Alt+Left/Right moves by word
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
