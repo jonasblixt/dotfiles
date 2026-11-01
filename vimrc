@@ -10,6 +10,12 @@ filetype plugin indent on
 syntax on
 
 set background=dark
+" gruvbox draws concealed characters in blue; markdown table borders are
+" concealed pipes, so keep them muted
+augroup muted_conceal
+    autocmd!
+    autocmd ColorScheme gruvbox hi! link Conceal GruvboxGray
+augroup END
 colorscheme gruvbox
 
 set number
@@ -58,6 +64,12 @@ let g:gruvbox_contrast_dark = 'soft'
 " let g:gruvbox_termcolors = 256
 
 autocmd! bufwritepost ~/.vimrc source %
+
+" Markdown: highlight fenced code blocks in these languages, see also
+" vim/after/ftplugin/markdown.vim
+let g:markdown_fenced_languages = ['c', 'cpp', 'python', 'sh', 'bash=sh',
+            \ 'shell=sh', 'console=sh', 'make', 'dts', 'rust', 'json', 'yaml',
+            \ 'toml', 'diff', 'vim']
 
 " Netrw configuration
 let g:netrw_liststyle = 5
